@@ -44,15 +44,13 @@
 }
 
 .main__image-container {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    max-width: 400px;
+    margin: 0; margin: auto;
+    max-width: 580px;
 }
 
 .main__image-container .main__image {
-    width: 17.92688rem;
-    height: 14.875rem;
+    width: 100%; height: 100%;
+    object-fit: contain;
 }
 .main__information {
     margin-bottom: 4rem;
@@ -130,15 +128,11 @@
     .main {
         justify-content: space-around;
     }
-    .main__title-error {
+    .main__information .main__title-error {
         font-size: 4rem;
     }
-    .main__description-error {
+    .main__information .main__description-error {
         font-size: 1.5rem;
-    }
-    .main__image {
-        width: 33.7015rem;
-        height: 27.96413rem;
     }
     .footer {
         margin-top: auto;
