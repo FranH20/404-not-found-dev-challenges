@@ -1,0 +1,149 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata:wght@700&family=Montserrat:wght@500;700&family=Space+Mono:wght@400;700&display=swap');
+
+:root {
+    font-family: 'Space Mono', monospace;
+  /*font-family: 'Inconsolata', monospace;
+    font-family: 'Montserrat', sans-serif;*/
+    scroll-behavior: smooth;
+}
+
+:root::-webkit-scrollbar {
+    width: 6px;
+}
+:root::-webkit-scrollbar-thumb {
+    background: #ccc;
+    border-radius: 4px;
+}
+
+
+/* Header */
+
+.header {
+    font-family: Inconsolata;
+    padding: 1rem;
+}
+
+.header .header__title-error {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.12rem;
+    text-transform: uppercase;
+}
+
+/* Main */
+
+.main {
+    padding: 2rem;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    align-content: center;
+}
+
+.main__image-container {
+    margin: 0;
+    width: 100%;
+    text-align: center;
+    max-width: 400px;
+}
+
+.main__image-container .main__image {
+    width: 17.92688rem;
+    height: 14.875rem;
+}
+.main__information {
+    margin-bottom: 4rem;
+}
+
+.main__information .main__title-error {
+    font-family: Space Mono;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.105rem;
+    max-width: 586px;
+}
+
+.main__information .main__description-error {
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: -0.03938rem;
+    max-width: 381px;
+}
+
+.main__homepage-container .main__homepage-button {
+    background: var(--gray-1, #333);
+    color: #FFF;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: -0.03063rem;
+    text-transform: uppercase;
+    padding: 1rem;
+    border: 0;
+    cursor: pointer;
+    trasition: all;
+    transition-duration: 0.5s;
+}
+
+.main__homepage-container .main__homepage-button:hover {
+    background-color: #2B254E;
+}
+
+/* Footer */
+
+.footer {
+    font-family: Montserrat;
+    text-align: center;
+    margin-bottom: -50px;
+}
+
+.footer .footer__message {
+    color: #BDBDBD;
+    font-size: 0.875rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    padding: 2rem;
+}
+
+.footer .footer__author {
+    color: #BDBDBD;
+    font-weight: bold;
+}
+
+/* Scrooll */
+
+@media only screen and (min-width: 600px) {
+    body {
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+    .main {
+        justify-content: space-around;
+    }
+    .main__title-error {
+        font-size: 4rem;
+    }
+    .main__description-error {
+        font-size: 1.5rem;
+    }
+    .main__image {
+        width: 33.7015rem;
+        height: 27.96413rem;
+    }
+    .footer {
+        margin-top: auto;
+    }
+    .footer .footer__message {
+        padding: 1rem;
+    }
+}
